@@ -13,7 +13,8 @@ export default {
     },
   },
   methods: {
-    allChecked() {
+    allChecked(event) {
+      // console.log('check it event first', event);
       this.$store.dispatch('checkAll', event.target.checked);
     },
   },

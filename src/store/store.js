@@ -65,8 +65,8 @@ export const store = new Vuex.Store({
       state.todos.splice(index, 1);
     },
     checkAll(state, checked) {
+      //  Vue.set(state.todos, indexOfItem, checked)
       state.todos.forEach((todo) => (todo.completed = checked));
-      console.log('check my state -- ', state.todos);
     },
     updateFilter(state, filter) {
       state.filter = filter;
@@ -77,9 +77,7 @@ export const store = new Vuex.Store({
   },
   actions: {
     addTodo(context, todo) {
-      setTimeout(() => {
-        context.commit('addTodo', todo);
-      }, 1000);
+      context.commit('addTodo', todo);
     },
     updateTodo(context, todo) {
       setTimeout(() => {

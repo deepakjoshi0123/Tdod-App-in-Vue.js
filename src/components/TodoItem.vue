@@ -1,12 +1,13 @@
 <template>
   <div class="todo-item">
     <div class="todo-item-left">
-      <input type="checkbox" v-model="completed" @change="doneEdit" />
+      <input type="checkbox" v-model="todo.completed" @change="doneEdit" />
+      <!-- but why data is not sync with props  -->
       <div
         v-if="!editing"
         @dblclick="editTodo"
         class="todo-item-label"
-        :class="{ completed: completed }"
+        :class="{ completed: todo.completed }"
       >
         {{ title }}
       </div>
@@ -69,7 +70,7 @@ export default {
       this.editing = true;
     },
     doneEdit() {
-      console.log('checking this value ', this.completed);
+      console.log('checking this value ', todo.completed);
       if (this.title.trim() == '') {
         this.title = this.beforeEditCache;
       }

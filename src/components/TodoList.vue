@@ -140,6 +140,6 @@ button {
 }
 
 .active {
-  background: rgb(182, 121, 184);
+  background: rgb(111, 74, 112);
 }
 </style>
