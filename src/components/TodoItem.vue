@@ -70,7 +70,7 @@ export default {
       this.editing = true;
     },
     doneEdit() {
-      console.log('checking this value ', todo.completed);
+      console.log('checking this value ');
       if (this.title.trim() == '') {
         this.title = this.beforeEditCache;
       }
@@ -78,7 +78,7 @@ export default {
       this.$store.dispatch('updateTodo', {
         id: this.id,
         title: this.title,
-        completed: this.completed,
+        completed: this.todo.completed, // why it's not working like above statements
         editing: this.editing,
       });
     },
