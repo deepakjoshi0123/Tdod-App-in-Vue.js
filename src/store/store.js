@@ -15,7 +15,7 @@ export const store = new Vuex.Store({
       },
       {
         id: 2,
-        title: 'sitemap npm module',
+        title: 'Deepak pending task',
         completed: false,
         editing: false,
       },

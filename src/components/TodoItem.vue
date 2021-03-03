@@ -46,6 +46,7 @@ export default {
     },
   },
   data() {
+    console.log('checking data () of vue ', this.todo);
     return {
       id: this.todo.id,
       title: this.todo.title,

@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <img src="./assets/logo.png" class="logo" />
+    <img src="./assets/download.png" class="logo" />
     <todo-list></todo-list>
   </div>
 </template>
@@ -22,6 +22,8 @@ export default {
 }
 
 .container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   max-width: 600px;
   margin: 0 auto;
 }

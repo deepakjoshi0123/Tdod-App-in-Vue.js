@@ -78,18 +78,22 @@ export default {
 
 <style>
 .todo-input {
-  width: 100%;
-  padding: 10px 18px;
-  font-size: 18px;
-  margin-bottom: 16px;
+  width: 90%;
+  padding: 10px 16px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .todo-item {
-  margin-bottom: 12px;
+  width: 90%;
+  margin-left: 30px;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation-duration: 0.3s;
 }
 
 .remove-item {
@@ -109,7 +113,9 @@ export default {
 }
 
 .todo-item-edit {
-  font-size: 24px;
+  width: 90%;
+  margin-left: 30px;
+  font-size: 15px;
   color: #2c3e50;
   margin-left: 12px;
   width: 100%;
@@ -124,6 +130,8 @@ export default {
 }
 
 .extra-container {
+  width: 90%;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,12 +142,20 @@ export default {
 }
 
 button {
-  font-size: 14px;
-  background-color: white;
-  appearance: none;
+  background-color: #1d1416;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .active {
-  background: rgb(111, 74, 112);
+  background: rgb(13, 104, 241);
 }
 </style>
