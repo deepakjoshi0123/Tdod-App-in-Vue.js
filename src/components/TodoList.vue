@@ -150,7 +150,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px 20px;
+  margin: 5px 5px;
   cursor: pointer;
   border-radius: 10px;
 }
