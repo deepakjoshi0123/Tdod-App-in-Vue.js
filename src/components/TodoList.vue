@@ -153,6 +153,7 @@ button {
   margin: 5px 5px;
   cursor: pointer;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .active {
